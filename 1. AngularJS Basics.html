@@ -1,0 +1,97 @@
+Write a program to evaluate expressions using {{ and }}. Create a text box and change the background of text box when we give a color value.
+
+<html>
+<head>
+<script type="text/javascript">
+  function evaluateExpression(){
+    var expression = document.getElementById("expression").value;
+    var result = eval(expression);
+    document.getElementById("result").innerHTML = result;
+  }
+  function changeBackgroundColor(){
+    var colorValue = document.getElementById("colorValue").value;
+    document.getElementById("expression").style.backgroundColor = colorValue;
+  }
+</script>
+</head>
+<body>
+  <h3>Evaluate Expression</h3>
+  Expression: <input type="text" id="expression"/><br/>
+  <input type="button" value="Evaluate" onclick="evaluateExpression()"/><br/>
+  Result: <span id="result"></span><br/><br/>
+  <h3>Change Background Color</h3>
+  Color Value: <input type="text" id="colorValue"/><br/>
+  <input type="button" value="Change Color" onclick="changeBackgroundColor()"/><br/>
+</body>
+</html>
+
+Understand a module and program to include a directive and a controller inside a module from external js file.
+
+// Directive
+angular.module('myModule', [])
+  .directive('myDirective', function () {
+    return {
+      restrict: 'A',
+      link: function (scope, element, attrs) {
+        element.on('click', function () {
+          // Do something when element is clicked
+        });
+      }
+    };
+  });
+
+// Controller
+angular.module('myModule').controller('myController', function ($scope) {
+  $scope.message = 'Hello World!';
+});
+
+Write a program to bind the data using ng-model directive. Use ng-init, ng-repeat and ng-include directives inside your program.
+
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Data Binding Example</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="myCtrl">
+ 
+		<div ng-init="names=['John', 'Adam', 'Mary', 'Jack']">
+		
+			<p>Select a name from the list:</p>
+
+			<select ng-model="selectedName" ng-options="name for name in names"></select>
+
+			<p>You selected: {{selectedName}}</p>
+			
+		</div>
+		
+		<div ng-include="'data.html'">
+		
+			<p>Data from included file: {{dataText}}</p>
+			
+		</div>
+		
+	</div>
+	
+	<script>
+	
+		function myCtrl($scope) {
+			$scope.dataText = "This is the data being included";
+		}
+	
+	</script>
+
+</body>
+</html>
+
+<!-- Data file data.html -->
+<p>This is an included file.</p>
+
+What is a scope and program with $scope and $rootScope?
+
+Scope is a JavaScript object that refers to the application model. It is an execution context for expressions. Scopes are arranged in hierarchical structure which mimic the DOM structure of the application.
+
+$scope is a special object created by AngularJS that contains the application model. It is available for use in Controllers, Directives and Expressions.
+
+$rootScope is the $scope created on the DOM element where the application is bootstrapped. It is the top-most scope and it is available for use in all parts of the application.
