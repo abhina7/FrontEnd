@@ -1,0 +1,27 @@
+<style>
+  A:link {
+    color: #FF0000;
+    text-decoration: none;
+  }
+  A:visited {
+    color: #FF0000;
+    text-decoration: none;
+  }
+  A:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+  A:active {
+    color: #BBBBBB;
+    text-decoration: none;
+  }
+  P:first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: #FF0000;
+  }
+</style>
+<body>
+  <h1>Welcome to my page!</h1>
+  <p>This is my homepage. Here you can learn more about me and my hobbies. <a href="#">Learn More</a></p>
+</body>
