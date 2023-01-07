@@ -1,0 +1,43 @@
+Develop your own web page basics.html with all the following html tags
+Html, head, title, body
+Heading, Paragraph, Italic, Bold, Anchor, Unordered List, List Item, ,label,Blockquote, Horizontal rule, Image, Division, Span
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basics of HTML</title>
+</head>
+<body>
+	<h1>Basics of HTML</h1>
+	<p>This page will cover the basics of HTML.</p>
+	<em>HTML stands for Hyper Text Markup Language</em><br>
+	<strong>It is the language used to create and structure web pages.</strong>
+	<a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML">Learn more about HTML</a>
+	<h2>HTML Tags</h2>
+	<ul>
+		<li><label>Heading</label></li>
+		<li><label>Paragraph</label></li>
+		<li><label>Italic</label></li>
+		<li><label>Bold</label></li>
+		<li><label>Anchor</label></li>
+		<li><label>Unordered List</label></li>
+		<li><label>List Item</label></li>
+		<li><label>Label</label></li>
+		<li><label>Blockquote</label></li>
+		<li><label>Horizontal rule</label></li>
+		<li><label>Image</label></li>
+		<li><label>Division</label></li>
+		<li><label>Span</label></li>
+	</ul>
+	<blockquote>
+		HTML tags are the building blocks of webpages.
+	</blockquote>
+	<hr>
+	<div>
+		<p>Let's look at some examples of HTML tags:</p>
+		<span><strong>Bold Text</strong></span>
+		<p>This is an example of the <em>Italic</em> tag.</p>
+		<img src="images/html_tags.jpg" alt="HTML Tags">
+	</div>
+</body>
+</html>
