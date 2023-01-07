@@ -1,0 +1,5 @@
+"use strict";
+
+// Strict mode helps you to write secure and reliable code by preventing you from using certain features of JavaScript that are considered dangerous. Strict mode also helps to identify errors that would otherwise be silent. 
+
+// For example, if a variable is not declared in strict mode, it will cause an error. This is because undeclared variables are not allowed in strict mode and must be declared before they can be used.
