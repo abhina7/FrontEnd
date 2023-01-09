@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Page with Links to Top and Bottom</title>
+    <style>
+      html, body {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Content goes here -->
+
+    <!-- Link to go to the bottom of the page -->
+    <a href="#bottom">Click to go to bottom of page</a>
+
+    <!-- Link to go to the top of the page -->
+    <a href="#top">Click to go to top of page</a>
+
+    <!-- Content goes here -->
+
+    <!-- Marker for bottom of page -->
+    <div id="bottom"></div>
+
+    <!-- Content goes here -->
+
+    <!-- Marker for top of page -->
+    <div id="top"></div>
+  </body>
+</html>
