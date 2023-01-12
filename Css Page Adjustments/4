@@ -1,0 +1,10 @@
+Padding is the space between the content and the border of an element. It is used to create space around the content of the element.
+
+Margin is the space outside the border of an element. It is used to create space between elements.
+
+In CSS, padding and margin can be specified in pixels, percentages, or other units.
+
+For example:
+
+Padding: 10px;
+Margin: 20px;
