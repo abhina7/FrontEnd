@@ -1,0 +1,5 @@
+Use I-frames and Marquee in your webpage
+
+<marquee><h1>Welcome to my website!</h1></marquee>
+
+<iframe src="https://www.example.com/video.mp4" width="560" height="315" frameborder="0" allowfullscreen></iframe>
